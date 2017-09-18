@@ -16,7 +16,7 @@ type User struct {
 
 func Database() *gorm.DB {
 	//open a db connection
-	db, err := gorm.Open("mysql", "root:iamgroot@tcp(127.0.0.1:3310)/test?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "youruser:yourpassword@tcp(127.0.0.1:yourport)/yourdatabasename?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic("failed to connect database")
 	}
